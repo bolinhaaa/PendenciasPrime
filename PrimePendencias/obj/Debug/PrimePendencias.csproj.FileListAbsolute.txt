@@ -1,0 +1,9 @@
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\bin\Debug\PrimePendencias.exe.config
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\bin\Debug\PrimePendencias.exe
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\bin\Debug\PrimePendencias.pdb
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.csprojResolveAssemblyReference.cache
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.frmPendenciasPrime.resources
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.Properties.Resources.resources
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.csproj.GenerateResource.Cache
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.exe
+c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.pdb
