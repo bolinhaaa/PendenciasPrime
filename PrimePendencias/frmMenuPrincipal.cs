@@ -17,6 +17,18 @@ namespace PrimePendencias
             InitializeComponent();
         }
 
+        private void AbrirFormSecundario(object frmSecundario)
+        {
+            if (this.panelPrincipal.Controls.Count > 0)
+                this.panelPrincipal.Controls.RemoveAt(0);
+            Form fh = frmSecundario as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelPrincipal.Controls.Add(fh);
+            this.panelPrincipal.Tag = fh;
+            fh.Show();
+        }
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -30,6 +42,7 @@ namespace PrimePendencias
         private void btnAddPendencias_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Adicionar Pendencias");
+            AbrirFormSecundario(new frmAddPendencias());
         }
 
         private void btnBuscarPendencias_Click(object sender, EventArgs e)

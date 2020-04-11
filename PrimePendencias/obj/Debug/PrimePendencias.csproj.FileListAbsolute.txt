@@ -7,3 +7,4 @@ c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\P
 c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.csproj.GenerateResource.Cache
 c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.exe
 c:\users\jonat\onedrive\documentos\visual studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.pdb
+C:\Users\jonat\OneDrive\Documentos\Visual Studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.frmAddPendencias.resources
