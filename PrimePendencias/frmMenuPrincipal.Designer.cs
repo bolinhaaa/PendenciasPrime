@@ -30,18 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPendenciasPrime));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.btnEditarStatusPendencias = new System.Windows.Forms.Button();
             this.btnBuscarPendencias = new System.Windows.Forms.Button();
             this.btnAddPendencias = new System.Windows.Forms.Button();
             this.lblCirurgica = new System.Windows.Forms.Label();
             this.lblPrime = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picHome = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.panel1.SuspendLayout();
@@ -50,18 +51,28 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(205)))), ((int)(((byte)(253)))));
+            this.panelMenu.Controls.Add(this.lblUsuario);
             this.panelMenu.Controls.Add(this.btnEditarStatusPendencias);
             this.panelMenu.Controls.Add(this.btnBuscarPendencias);
             this.panelMenu.Controls.Add(this.btnAddPendencias);
             this.panelMenu.Controls.Add(this.lblCirurgica);
             this.panelMenu.Controls.Add(this.lblPrime);
-            this.panelMenu.Controls.Add(this.pictureBox1);
+            this.panelMenu.Controls.Add(this.picHome);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(239, 500);
             this.panelMenu.TabIndex = 0;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(93, 172);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(47, 16);
+            this.lblUsuario.TabIndex = 6;
+            this.lblUsuario.Text = "Usúario";
             // 
             // btnEditarStatusPendencias
             // 
@@ -134,16 +145,17 @@
             this.lblPrime.Text = "Prime";
             this.lblPrime.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // pictureBox1
+            // picHome
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(74, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picHome.Image = ((System.Drawing.Image)(resources.GetObject("picHome.Image")));
+            this.picHome.Location = new System.Drawing.Point(74, 13);
+            this.picHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(80, 80);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHome.TabIndex = 0;
+            this.picHome.TabStop = false;
+            this.picHome.Click += new System.EventHandler(this.picHome_Click);
             // 
             // panelPrincipal
             // 
@@ -200,9 +212,10 @@
             this.Name = "frmPendenciasPrime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
+            this.Load += new System.EventHandler(this.frmPendenciasPrime_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -213,7 +226,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picHome;
         private System.Windows.Forms.Label lblPrime;
         private System.Windows.Forms.Label lblCirurgica;
         private System.Windows.Forms.Button btnAddPendencias;
@@ -223,6 +236,7 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }
 

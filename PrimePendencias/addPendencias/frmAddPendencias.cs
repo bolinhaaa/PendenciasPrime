@@ -16,5 +16,12 @@ namespace PrimePendencias
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(txtNumeroPendencia.Text);
+            MessageBox.Show(txtPallet.Text);
+            MessageBox.Show(txtStatus.Text);
+        }
     }
 }

@@ -21,11 +21,15 @@ namespace PrimePendencias
         {
             lblPallet.Visible = true;
             lblPalletResultado.Visible = true;
-            lblPalletResultado.Text = "5";
+            lblPalletResultado.Text = txtNumeroPendencia.Text;
 
             lblStatus.Visible = true;
             lblStatusResultado.Visible = true;
             lblStatusResultado.Text = "Removido";
+
+            lblUsuario.Visible = true;
+            lblResultadoUsuario.Visible = true;
+            lblResultadoUsuario.Text = "Daniel";
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

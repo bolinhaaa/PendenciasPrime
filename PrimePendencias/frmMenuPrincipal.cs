@@ -17,6 +17,7 @@ namespace PrimePendencias
             InitializeComponent();
         }
 
+      
         private void AbrirFormSecundario(object frmSecundario)
         {
             if (this.panelPrincipal.Controls.Count > 0)
@@ -57,6 +58,17 @@ namespace PrimePendencias
             MessageBox.Show("Editar Status Das Pendências");
             AbrirFormSecundario(new frmEditarStatusPendencia());
         }
+
+        private void picHome_Click(object sender, EventArgs e)
+        {
+            AbrirFormSecundario(new homePendencias());
+        }
+
+        private void frmPendenciasPrime_Load(object sender, EventArgs e)
+        {
+            picHome_Click(null, e);
+        }
+
 
         // CLASS DA DLL
 
