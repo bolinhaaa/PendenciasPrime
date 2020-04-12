@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAddPendencias.cs">
+    <Compile Include="addPendencias\frmAddPendencias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddPendencias.Designer.cs">
+    <Compile Include="addPendencias\frmAddPendencias.Designer.cs">
       <DependentUpon>frmAddPendencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editarStatusPendencias\frmEditarStatusPendencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editarStatusPendencias\frmEditarStatusPendencia.Designer.cs">
+      <DependentUpon>frmEditarStatusPendencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bucarPendencias\frmBuscarPendencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bucarPendencias\frmBuscarPendencia.Designer.cs">
+      <DependentUpon>frmBuscarPendencia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -60,8 +72,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAddPendencias.resx">
+    <EmbeddedResource Include="addPendencias\frmAddPendencias.resx">
       <DependentUpon>frmAddPendencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editarStatusPendencias\frmEditarStatusPendencia.resx">
+      <DependentUpon>frmEditarStatusPendencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bucarPendencias\frmBuscarPendencia.resx">
+      <DependentUpon>frmBuscarPendencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>

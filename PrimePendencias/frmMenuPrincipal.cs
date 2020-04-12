@@ -27,6 +27,7 @@ namespace PrimePendencias
             this.panelPrincipal.Controls.Add(fh);
             this.panelPrincipal.Tag = fh;
             fh.Show();
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -48,11 +49,13 @@ namespace PrimePendencias
         private void btnBuscarPendencias_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Buscar Pendências");
+            AbrirFormSecundario(new frmBuscarPrimeiro());
         }
-
+        
         private void btnEditarStatusPendencias_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Editar Status Das Pendências");
+            AbrirFormSecundario(new frmEditarStatusPendencia());
         }
 
         // CLASS DA DLL

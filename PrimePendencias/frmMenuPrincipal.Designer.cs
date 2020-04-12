@@ -29,38 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPendenciasPrime));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMenu = new System.Windows.Forms.Panel();
             this.btnEditarStatusPendencias = new System.Windows.Forms.Button();
             this.btnBuscarPendencias = new System.Windows.Forms.Button();
             this.btnAddPendencias = new System.Windows.Forms.Button();
             this.lblCirurgica = new System.Windows.Forms.Label();
             this.lblPrime = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            this.panelPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelMenu
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(205)))), ((int)(((byte)(253)))));
-            this.panel1.Controls.Add(this.btnEditarStatusPendencias);
-            this.panel1.Controls.Add(this.btnBuscarPendencias);
-            this.panel1.Controls.Add(this.btnAddPendencias);
-            this.panel1.Controls.Add(this.lblCirurgica);
-            this.panel1.Controls.Add(this.lblPrime);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(245, 500);
-            this.panel1.TabIndex = 0;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(205)))), ((int)(((byte)(253)))));
+            this.panelMenu.Controls.Add(this.btnEditarStatusPendencias);
+            this.panelMenu.Controls.Add(this.btnBuscarPendencias);
+            this.panelMenu.Controls.Add(this.btnAddPendencias);
+            this.panelMenu.Controls.Add(this.lblCirurgica);
+            this.panelMenu.Controls.Add(this.lblPrime);
+            this.panelMenu.Controls.Add(this.pictureBox1);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(239, 500);
+            this.panelMenu.TabIndex = 0;
             // 
             // btnEditarStatusPendencias
             // 
@@ -70,7 +71,7 @@
             this.btnEditarStatusPendencias.ForeColor = System.Drawing.Color.White;
             this.btnEditarStatusPendencias.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarStatusPendencias.Image")));
             this.btnEditarStatusPendencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarStatusPendencias.Location = new System.Drawing.Point(0, 344);
+            this.btnEditarStatusPendencias.Location = new System.Drawing.Point(0, 372);
             this.btnEditarStatusPendencias.Name = "btnEditarStatusPendencias";
             this.btnEditarStatusPendencias.Size = new System.Drawing.Size(242, 37);
             this.btnEditarStatusPendencias.TabIndex = 5;
@@ -86,7 +87,7 @@
             this.btnBuscarPendencias.ForeColor = System.Drawing.Color.White;
             this.btnBuscarPendencias.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarPendencias.Image")));
             this.btnBuscarPendencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarPendencias.Location = new System.Drawing.Point(0, 265);
+            this.btnBuscarPendencias.Location = new System.Drawing.Point(0, 293);
             this.btnBuscarPendencias.Name = "btnBuscarPendencias";
             this.btnBuscarPendencias.Size = new System.Drawing.Size(242, 37);
             this.btnBuscarPendencias.TabIndex = 4;
@@ -102,7 +103,7 @@
             this.btnAddPendencias.ForeColor = System.Drawing.SystemColors.Window;
             this.btnAddPendencias.Image = ((System.Drawing.Image)(resources.GetObject("btnAddPendencias.Image")));
             this.btnAddPendencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddPendencias.Location = new System.Drawing.Point(0, 186);
+            this.btnAddPendencias.Location = new System.Drawing.Point(0, 214);
             this.btnAddPendencias.Name = "btnAddPendencias";
             this.btnAddPendencias.Size = new System.Drawing.Size(242, 37);
             this.btnAddPendencias.TabIndex = 3;
@@ -144,23 +145,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnClose
+            // panelPrincipal
             // 
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(817, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnClose.TabIndex = 1;
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.panelPrincipal.Location = new System.Drawing.Point(239, 33);
+            this.panelPrincipal.Name = "panelPrincipal";
+            this.panelPrincipal.Size = new System.Drawing.Size(861, 467);
+            this.panelPrincipal.TabIndex = 3;
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(781, 13);
+            this.btnMinimizar.Location = new System.Drawing.Point(792, 3);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -168,23 +164,35 @@
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // panelPrincipal
+            // btnClose
             // 
-            this.panelPrincipal.Controls.Add(this.btnMinimizar);
-            this.panelPrincipal.Controls.Add(this.btnClose);
-            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipal.Location = new System.Drawing.Point(245, 0);
-            this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(855, 500);
-            this.panelPrincipal.TabIndex = 3;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(828, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnClose.TabIndex = 1;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Controls.Add(this.btnMinimizar);
+            this.panel1.Location = new System.Drawing.Point(239, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(861, 33);
+            this.panel1.TabIndex = 3;
             // 
             // frmPendenciasPrime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 500);
-            this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelPrincipal);
+            this.Controls.Add(this.panelMenu);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -192,28 +200,29 @@
             this.Name = "frmPendenciasPrime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            this.panelPrincipal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblPrime;
         private System.Windows.Forms.Label lblCirurgica;
         private System.Windows.Forms.Button btnAddPendencias;
         private System.Windows.Forms.Button btnBuscarPendencias;
         private System.Windows.Forms.Button btnEditarStatusPendencias;
-        private System.Windows.Forms.PictureBox btnClose;
-        private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.Panel panelPrincipal;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnClose;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
