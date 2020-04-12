@@ -50,7 +50,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(205)))), ((int)(((byte)(253)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.panelMenu.Controls.Add(this.lblUsuario);
             this.panelMenu.Controls.Add(this.btnEditarStatusPendencias);
             this.panelMenu.Controls.Add(this.btnBuscarPendencias);

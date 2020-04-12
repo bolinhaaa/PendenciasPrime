@@ -46,22 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addPendencias\frmAddPendencias.cs">
+    <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addPendencias\frmAddPendencias.Designer.cs">
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fron End\addPendencias\frmAddPendencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fron End\addPendencias\frmAddPendencias.Designer.cs">
       <DependentUpon>frmAddPendencias.cs</DependentUpon>
     </Compile>
-    <Compile Include="editarStatusPendencias\frmEditarStatusPendencia.cs">
+    <Compile Include="Fron End\editarStatusPendencias\frmEditarStatusPendencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="editarStatusPendencias\frmEditarStatusPendencia.Designer.cs">
+    <Compile Include="Fron End\editarStatusPendencias\frmEditarStatusPendencia.Designer.cs">
       <DependentUpon>frmEditarStatusPendencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="bucarPendencias\frmBuscarPendencia.cs">
+    <Compile Include="Fron End\bucarPendencias\frmBuscarPendencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bucarPendencias\frmBuscarPendencia.Designer.cs">
+    <Compile Include="Fron End\bucarPendencias\frmBuscarPendencia.Designer.cs">
       <DependentUpon>frmBuscarPendencia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenuPrincipal.cs">
@@ -70,27 +76,30 @@
     <Compile Include="frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="homePendencias\homePendencias.cs">
+    <Compile Include="Fron End\homePendencias\homePendencias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="homePendencias\homePendencias.Designer.cs">
+    <Compile Include="Fron End\homePendencias\homePendencias.Designer.cs">
       <DependentUpon>homePendencias.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="addPendencias\frmAddPendencias.resx">
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fron End\addPendencias\frmAddPendencias.resx">
       <DependentUpon>frmAddPendencias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="editarStatusPendencias\frmEditarStatusPendencia.resx">
+    <EmbeddedResource Include="Fron End\editarStatusPendencias\frmEditarStatusPendencia.resx">
       <DependentUpon>frmEditarStatusPendencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bucarPendencias\frmBuscarPendencia.resx">
+    <EmbeddedResource Include="Fron End\bucarPendencias\frmBuscarPendencia.resx">
       <DependentUpon>frmBuscarPendencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="homePendencias\homePendencias.resx">
+    <EmbeddedResource Include="Fron End\homePendencias\homePendencias.resx">
       <DependentUpon>homePendencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
