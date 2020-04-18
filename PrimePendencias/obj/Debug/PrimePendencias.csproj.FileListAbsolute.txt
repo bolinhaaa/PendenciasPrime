@@ -12,3 +12,4 @@ C:\Users\jonat\OneDrive\Documentos\Visual Studio 2015\Projects\PrimePendencias\P
 C:\Users\jonat\OneDrive\Documentos\Visual Studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.frmBuscarPrimeiro.resources
 C:\Users\jonat\OneDrive\Documentos\Visual Studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.homePendencias.resources
 C:\Users\jonat\OneDrive\Documentos\Visual Studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.frmLogin.resources
+C:\Users\jonat\OneDrive\Documentos\Visual Studio 2015\Projects\PrimePendencias\PrimePendencias\obj\Debug\PrimePendencias.frmSignup.resources

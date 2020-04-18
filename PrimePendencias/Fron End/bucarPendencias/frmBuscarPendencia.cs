@@ -19,6 +19,10 @@ namespace PrimePendencias
 
         private void Exibir()
         {
+            lblNome.Visible = true;
+            lblNomeResultado.Visible = true;
+            lblNomeResultado.Text = "Fulano";
+          
             lblPallet.Visible = true;
             lblPalletResultado.Visible = true;
             lblPalletResultado.Text = txtNumeroPendencia.Text;

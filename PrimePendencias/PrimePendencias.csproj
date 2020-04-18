@@ -52,6 +52,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignup.Designer.cs">
+      <DependentUpon>frmSignup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fron End\addPendencias\frmAddPendencias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,11 +76,11 @@
     <Compile Include="Fron End\bucarPendencias\frmBuscarPendencia.Designer.cs">
       <DependentUpon>frmBuscarPendencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMenuPrincipal.cs">
+    <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMenuPrincipal.Designer.cs">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Fron End\homePendencias\homePendencias.cs">
       <SubType>Form</SubType>
@@ -87,6 +93,9 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSignup.resx">
+      <DependentUpon>frmSignup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fron End\addPendencias\frmAddPendencias.resx">
       <DependentUpon>frmAddPendencias.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,8 +105,8 @@
     <EmbeddedResource Include="Fron End\bucarPendencias\frmBuscarPendencia.resx">
       <DependentUpon>frmBuscarPendencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMenuPrincipal.resx">
-      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fron End\homePendencias\homePendencias.resx">
       <DependentUpon>homePendencias.cs</DependentUpon>

@@ -39,6 +39,7 @@
             // 
             // picWebSite
             // 
+            this.picWebSite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picWebSite.Image = ((System.Drawing.Image)(resources.GetObject("picWebSite.Image")));
             this.picWebSite.Location = new System.Drawing.Point(210, 138);
             this.picWebSite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -51,6 +52,7 @@
             // 
             // picFace
             // 
+            this.picFace.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picFace.Image = ((System.Drawing.Image)(resources.GetObject("picFace.Image")));
             this.picFace.Location = new System.Drawing.Point(480, 138);
             this.picFace.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

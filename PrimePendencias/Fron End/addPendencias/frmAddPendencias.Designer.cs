@@ -37,6 +37,8 @@
             this.txtPallet = new System.Windows.Forms.TextBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.lblUsuarioAdd = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNumeroPendencia
@@ -60,7 +62,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(26, 285);
+            this.lblUsuario.Location = new System.Drawing.Point(26, 326);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(58, 19);
             this.lblUsuario.TabIndex = 13;
@@ -71,7 +73,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(26, 209);
+            this.lblStatus.Location = new System.Drawing.Point(26, 250);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(50, 19);
             this.lblStatus.TabIndex = 14;
@@ -82,7 +84,7 @@
             // 
             this.lblPallet.AutoSize = true;
             this.lblPallet.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPallet.Location = new System.Drawing.Point(26, 148);
+            this.lblPallet.Location = new System.Drawing.Point(26, 189);
             this.lblPallet.Name = "lblPallet";
             this.lblPallet.Size = new System.Drawing.Size(47, 19);
             this.lblPallet.TabIndex = 15;
@@ -101,14 +103,14 @@
             // 
             // txtPallet
             // 
-            this.txtPallet.Location = new System.Drawing.Point(186, 148);
+            this.txtPallet.Location = new System.Drawing.Point(186, 189);
             this.txtPallet.Name = "txtPallet";
             this.txtPallet.Size = new System.Drawing.Size(100, 21);
             this.txtPallet.TabIndex = 17;
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(186, 207);
+            this.txtStatus.Location = new System.Drawing.Point(186, 248);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(100, 21);
             this.txtStatus.TabIndex = 17;
@@ -116,10 +118,27 @@
             // lblUsuarioAdd
             // 
             this.lblUsuarioAdd.AutoSize = true;
-            this.lblUsuarioAdd.Location = new System.Drawing.Point(186, 285);
+            this.lblUsuarioAdd.Location = new System.Drawing.Point(186, 326);
             this.lblUsuarioAdd.Name = "lblUsuarioAdd";
             this.lblUsuarioAdd.Size = new System.Drawing.Size(0, 16);
             this.lblUsuarioAdd.TabIndex = 18;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(186, 135);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(100, 21);
+            this.txtNome.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(26, 135);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 19);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Nome";
             // 
             // frmAddPendencias
             // 
@@ -127,6 +146,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(860, 390);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblUsuarioAdd);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.txtPallet);
@@ -157,5 +178,7 @@
         private System.Windows.Forms.TextBox txtPallet;
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Label lblUsuarioAdd;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -37,13 +37,15 @@
             this.lblStatusResultado = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblResultadoUsuario = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblNomeResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPallet
             // 
             this.lblPallet.AutoSize = true;
             this.lblPallet.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPallet.Location = new System.Drawing.Point(27, 154);
+            this.lblPallet.Location = new System.Drawing.Point(27, 188);
             this.lblPallet.Name = "lblPallet";
             this.lblPallet.Size = new System.Drawing.Size(47, 19);
             this.lblPallet.TabIndex = 12;
@@ -73,7 +75,7 @@
             // 
             // txtNumeroPendencia
             // 
-            this.txtNumeroPendencia.Location = new System.Drawing.Point(173, 63);
+            this.txtNumeroPendencia.Location = new System.Drawing.Point(176, 63);
             this.txtNumeroPendencia.Name = "txtNumeroPendencia";
             this.txtNumeroPendencia.Size = new System.Drawing.Size(100, 20);
             this.txtNumeroPendencia.TabIndex = 0;
@@ -81,7 +83,7 @@
             // lblPalletResultado
             // 
             this.lblPalletResultado.AutoSize = true;
-            this.lblPalletResultado.Location = new System.Drawing.Point(173, 159);
+            this.lblPalletResultado.Location = new System.Drawing.Point(173, 193);
             this.lblPalletResultado.Name = "lblPalletResultado";
             this.lblPalletResultado.Size = new System.Drawing.Size(0, 13);
             this.lblPalletResultado.TabIndex = 13;
@@ -91,7 +93,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(27, 215);
+            this.lblStatus.Location = new System.Drawing.Point(27, 249);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(50, 19);
             this.lblStatus.TabIndex = 12;
@@ -102,7 +104,7 @@
             // lblStatusResultado
             // 
             this.lblStatusResultado.AutoSize = true;
-            this.lblStatusResultado.Location = new System.Drawing.Point(173, 220);
+            this.lblStatusResultado.Location = new System.Drawing.Point(173, 254);
             this.lblStatusResultado.Name = "lblStatusResultado";
             this.lblStatusResultado.Size = new System.Drawing.Size(0, 13);
             this.lblStatusResultado.TabIndex = 13;
@@ -113,7 +115,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(27, 291);
+            this.lblUsuario.Location = new System.Drawing.Point(27, 325);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(58, 19);
             this.lblUsuario.TabIndex = 12;
@@ -124,18 +126,40 @@
             // lblResultadoUsuario
             // 
             this.lblResultadoUsuario.AutoSize = true;
-            this.lblResultadoUsuario.Location = new System.Drawing.Point(173, 291);
+            this.lblResultadoUsuario.Location = new System.Drawing.Point(173, 325);
             this.lblResultadoUsuario.Name = "lblResultadoUsuario";
             this.lblResultadoUsuario.Size = new System.Drawing.Size(0, 13);
             this.lblResultadoUsuario.TabIndex = 13;
             this.lblResultadoUsuario.UseWaitCursor = true;
             this.lblResultadoUsuario.Visible = false;
             // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(27, 129);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(50, 19);
+            this.lblNome.TabIndex = 21;
+            this.lblNome.Text = "Nome";
+            this.lblNome.Visible = false;
+            // 
+            // lblNomeResultado
+            // 
+            this.lblNomeResultado.AutoSize = true;
+            this.lblNomeResultado.Location = new System.Drawing.Point(173, 135);
+            this.lblNomeResultado.Name = "lblNomeResultado";
+            this.lblNomeResultado.Size = new System.Drawing.Size(0, 13);
+            this.lblNomeResultado.TabIndex = 22;
+            this.lblNomeResultado.Visible = false;
+            // 
             // frmBuscarPrimeiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 390);
+            this.Controls.Add(this.lblNomeResultado);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblResultadoUsuario);
             this.Controls.Add(this.lblStatusResultado);
             this.Controls.Add(this.lblPalletResultado);
@@ -163,5 +187,7 @@
         private System.Windows.Forms.Label lblStatusResultado;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblResultadoUsuario;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblNomeResultado;
     }
 }
