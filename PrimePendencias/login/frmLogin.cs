@@ -15,9 +15,12 @@ namespace PrimePendencias
         public frmLogin()
         {
             InitializeComponent();
-            txtusuario.BorderStyle = BorderStyle.None;
+            txtUsuario.BorderStyle = BorderStyle.None;
+            txtSenha.PasswordChar = '*';
         }
 
+        public static String varNome;
+      
         private void picExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -30,19 +33,19 @@ namespace PrimePendencias
 
         private void txtusuario_Enter(object sender, EventArgs e)
         {
-            if(txtusuario.Text == "Usuario")
+            if(txtUsuario.Text == "Usuario")
             {
-                txtusuario.Text = "";
-                txtusuario.ForeColor = Color.LightGray;
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.LightGray;
             }
         }
 
         private void txtusuario_Leave(object sender, EventArgs e)
         {
-            if(txtusuario.Text == "")
+            if(txtUsuario.Text == "")
             {
-                txtusuario.Text = "Usuario";
-                txtusuario.ForeColor = Color.DimGray;
+                txtUsuario.Text = "Usuario";
+                txtUsuario.ForeColor = Color.DimGray;
             }
         }
 
@@ -68,10 +71,34 @@ namespace PrimePendencias
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmPendenciasPrime formprincipal = new frmPendenciasPrime();
-            this.Hide();
-            formprincipal.ShowDialog();
-            this.Show();
+            if(!String.IsNullOrWhiteSpace(txtUsuario.Text) && !String.IsNullOrWhiteSpace(txtSenha.Text))
+            {
+                login.User objUser = new login.User();
+
+                objUser.Usuario = txtUsuario.Text;
+                objUser.Senha = txtSenha.Text;
+
+                // acesso ao banco
+                if (objUser.Consultar(objUser))
+                {
+                    varNome = AcessoBD.dataTable.Rows[0][2].ToString();
+
+                    frmPendenciasPrime formprincipal = new frmPendenciasPrime();
+                    MessageBox.Show("Usuário Autenticado!");
+                    this.Hide();
+                    formprincipal.ShowDialog();
+                    if (formprincipal.IsDisposed)
+                        Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário e/ou Senha não Encontrados.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Usuário e/ou Senhas são Obrigatorios");
+            }
         }
 
         private void linkCriarConta_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -81,5 +108,6 @@ namespace PrimePendencias
             frmCriarconta.ShowDialog();
             this.Show();         
         }
+
     }
 }

@@ -68,9 +68,10 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(93, 172);
+            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(90, 172);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(47, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(57, 17);
             this.lblUsuario.TabIndex = 6;
             this.lblUsuario.Text = "Usúario";
             // 
@@ -192,6 +193,7 @@
             // 
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnMinimizar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(239, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(861, 33);
@@ -212,6 +214,7 @@
             this.Name = "frmPendenciasPrime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPendenciasPrime_FormClosing_1);
             this.Load += new System.EventHandler(this.frmPendenciasPrime_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();

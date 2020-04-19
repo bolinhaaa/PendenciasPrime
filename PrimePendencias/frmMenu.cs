@@ -31,6 +31,9 @@ namespace PrimePendencias
 
         }
 
+        public Boolean varSaida = true;
+
+      
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -67,10 +70,18 @@ namespace PrimePendencias
         private void frmPendenciasPrime_Load(object sender, EventArgs e)
         {
             picHome_Click(null, e);
+
+            lblUsuario.Text = frmLogin.varNome;
         }
 
+        private void frmPendenciasPrime_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Dispose();
+        }
 
-        // CLASS DA DLL
-
+        private void frmPendenciasPrime_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            Dispose();
+        }
     }
 }

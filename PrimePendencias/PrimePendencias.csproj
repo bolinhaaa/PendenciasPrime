@@ -46,16 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="AcessoBD.cs" />
+    <Compile Include="login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
+    <Compile Include="login\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSignup.cs">
+    <Compile Include="Signup\frmSignup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSignup.Designer.cs">
+    <Compile Include="Signup\frmSignup.Designer.cs">
       <DependentUpon>frmSignup.cs</DependentUpon>
     </Compile>
     <Compile Include="Fron End\addPendencias\frmAddPendencias.cs">
@@ -88,12 +89,14 @@
     <Compile Include="Fron End\homePendencias\homePendencias.Designer.cs">
       <DependentUpon>homePendencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="login\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmLogin.resx">
+    <Compile Include="Signup\Signup.cs" />
+    <EmbeddedResource Include="login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSignup.resx">
+    <EmbeddedResource Include="Signup\frmSignup.resx">
       <DependentUpon>frmSignup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fron End\addPendencias\frmAddPendencias.resx">

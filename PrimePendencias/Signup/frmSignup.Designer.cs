@@ -39,13 +39,15 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.picMini = new System.Windows.Forms.PictureBox();
             this.picExit = new System.Windows.Forms.PictureBox();
+            this.picCheck = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCheck)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,9 +57,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.label1.Location = new System.Drawing.Point(469, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 33);
+            this.label1.Size = new System.Drawing.Size(111, 33);
             this.label1.TabIndex = 3;
-            this.label1.Text = "LOGIN";
+            this.label1.Text = "SIGNUP";
             // 
             // linkEntrar
             // 
@@ -77,6 +79,7 @@
             // btnCriar
             // 
             this.btnCriar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(53)))), ((int)(((byte)(73)))));
+            this.btnCriar.Enabled = false;
             this.btnCriar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(159)))), ((int)(((byte)(127)))));
             this.btnCriar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.btnCriar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(118)))), ((int)(((byte)(126)))));
@@ -88,6 +91,7 @@
             this.btnCriar.TabIndex = 4;
             this.btnCriar.Text = "Criar";
             this.btnCriar.UseVisualStyleBackColor = false;
+            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
             // lblSenha
             // 
@@ -114,6 +118,7 @@
             // txtSenha
             // 
             this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.txtSenha.Enabled = false;
             this.txtSenha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.Color.Silver;
             this.txtSenha.Location = new System.Drawing.Point(315, 159);
@@ -134,6 +139,7 @@
             // txtNome
             // 
             this.txtNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.txtNome.Enabled = false;
             this.txtNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.ForeColor = System.Drawing.Color.Silver;
             this.txtNome.Location = new System.Drawing.Point(315, 239);
@@ -155,22 +161,22 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.picLogo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 402);
             this.panel1.TabIndex = 11;
             // 
-            // pictureBox1
+            // picLogo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(75, 151);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(75, 151);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(100, 100);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 1;
+            this.picLogo.TabStop = false;
             // 
             // picMini
             // 
@@ -196,12 +202,25 @@
             this.picExit.TabStop = false;
             this.picExit.Click += new System.EventHandler(this.picExit_Click);
             // 
+            // picCheck
+            // 
+            this.picCheck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCheck.Image = ((System.Drawing.Image)(resources.GetObject("picCheck.Image")));
+            this.picCheck.Location = new System.Drawing.Point(738, 76);
+            this.picCheck.Name = "picCheck";
+            this.picCheck.Size = new System.Drawing.Size(27, 27);
+            this.picCheck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picCheck.TabIndex = 15;
+            this.picCheck.TabStop = false;
+            this.picCheck.Click += new System.EventHandler(this.picCheck_Click);
+            // 
             // frmSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 402);
+            this.Controls.Add(this.picCheck);
             this.Controls.Add(this.picMini);
             this.Controls.Add(this.picExit);
             this.Controls.Add(this.panel1);
@@ -220,9 +239,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSignup";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCheck)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,8 +260,9 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.PictureBox picMini;
         private System.Windows.Forms.PictureBox picExit;
+        private System.Windows.Forms.PictureBox picCheck;
     }
 }
